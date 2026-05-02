@@ -13,6 +13,7 @@ class Annonceur extends Model
         'adresse',
     ];
 
+    
     public function ServicePublicitaire()
     {
         return $this->hasMany(ServicePublicitaire::class, 'annonceur_id', 'annonceur_id');
