@@ -14,9 +14,8 @@ return new class extends Migration {
             $table->decimal('tarif');
             $table->integer('dureejour');
             $table->boolean('actif');
-            $table->foreignId('produit_id')->constrained('produits')->onDelete('cascade');
             $table->foreignId('annonceur_id')->constrained('annonceurs')->onDelete('cascade');
-            $table->timestamps();
+          
             // Clé vers Produit dans le système .NET (pas de contrainte)
             $table->unsignedBigInteger('produit_id')->nullable();
             $table->timestamps();

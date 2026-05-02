@@ -21,6 +21,8 @@ class Publication extends Model
         return $this->belongsTo(DossierAnnonce::class);
     }
 
+    
+
     protected function casts(): array
     {
         return [
