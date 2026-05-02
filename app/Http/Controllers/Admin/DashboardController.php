@@ -10,8 +10,5 @@ class DashboardController extends Controller
     {
         return view('admin.dashboard.index');
     }
-    public function calcul()
-    {
 
-    }
 }
